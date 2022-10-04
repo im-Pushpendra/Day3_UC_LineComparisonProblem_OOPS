@@ -29,6 +29,16 @@ public class LineComparisonProblem {
 		String s1=Float.toString(a);
 		String s2=Float.toString(b);
 		System.out.println("Equality of two lines using Java equals method is: "+s1.equals(s2));
+		System.out.println();
+		int s3= s1.compareTo(s2);
+		System.out.println("Comparing of two lines using Java compareTo method is: "+s1.compareTo(s2));
+		System.out.println();
+		if(s3>0)
+		System.out.println("line1 is Greater than line2");
+		else if(s3<0)
+		System.out.println("line1 is Less than line2");
+		else
+		System.out.println("line1 is Equal to line2");
 		
 	}
 
